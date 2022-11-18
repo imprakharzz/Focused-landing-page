@@ -1,0 +1,222 @@
+/* #ffe484
+#d45858 */
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("wave-haikei.png");
+    background-size: cover;
+    color: #343434;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav{
+    margin: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: rgb(212,88,88);
+    background: linear-gradient(90deg, rgba(212,88,88,1) 0%, rgba(255,228,132,0.8662815467984069) 100%);
+}
+
+.logo_wrapper{
+    display: flex;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-basis: 45%;
+}
+
+.logo_text{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.app{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app a{
+    text-decoration: none;
+}
+
+.back{
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.login{
+    padding: .5em 2em;
+    border: 2px solid #d45858;
+}
+
+.login:hover{
+    background-color: #d45858;
+    color: white;
+}
+
+.ham{
+    display: none;
+    font-size: 7rem;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.wrapper{
+    width: 80vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.right img{
+    width: 70%;
+}
+
+.heading{
+    font-size: 3rem;
+    /* letter-spacing: 3px; */
+}
+
+.line{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.bttn_wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 28%;
+    cursor: pointer;
+    margin-top: 2em;
+    padding: 1em 0.5em;
+    background-color: #d45858;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.bttn_wrapper:hover{
+    background-color: #d45858c8;
+}
+
+.bttn i{
+    margin-right: 1em;
+}
+
+.login a{
+    border: 2px solid #d45858;
+}
+
+.back:hover{
+    border-radius: 0;
+    border-bottom: solid 1px #d45858;
+}
+
+@media screen and (max-width: 1150px) {
+    html{
+        font-size: 12px;
+    }
+    body{
+        background: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .right{
+        display: none;
+    }
+    .wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .heading{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .line{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bttn_wrapper{
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    .dwld{
+        font-size: 2.5rem;
+    }
+    .apple{
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    html{
+        font-size: 5px;
+    }
+    .app{
+        display: none;
+    }
+    .logo_text{
+        font-size: 5rem;
+    }
+    .ham{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
